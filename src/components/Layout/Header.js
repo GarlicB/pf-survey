@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import Sign from "../../pages/Sign";
 import Logo from "./Logo";
 
 function Header() {
@@ -57,6 +58,7 @@ function Header() {
           </nav>
         </div>
       </header>
+      {showModal && <Sign close={toggleModal} />}
     </>
   );
 }
